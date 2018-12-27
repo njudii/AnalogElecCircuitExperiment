@@ -1,0 +1,12 @@
+#LaTeX folder files
+Lab**/TeX/*
+!fig/
+!*.tex
+!*.pdf
+!*.bib
+
+
+#data folder
+data/
+
+.vscode/
