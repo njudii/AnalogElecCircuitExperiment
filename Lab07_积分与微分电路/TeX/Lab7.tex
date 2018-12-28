@@ -292,11 +292,12 @@ $v_{opp}$/mV & 65   & 53   & 41   & 35.5 & 30   & 17.25 & 15.25 & 11.8  &       
 根据图(\ref{AFC_int_diff_fig})可明显观察到所谓“小刺”，即幅频特性曲线中一个突起的峰。
 
 \section{实验讨论与误差分析}
+\iffalse
 \begin{enumerate}
 \item 测量准确性\\
 在测量积分电路幅频特性数据时，当输出电压很小时，示波器显示的波形及其不清晰，其测量功能测到的数据波动极大。因此测得的数据可能不准确。
 \item 不接电阻$R_2$时积分电路的幅频特性\\
-接了电阻$R_2$时，积分电路在低频下的波形图如图(\ref{20Hz_int_s})，可以看到输出信号的三角波明显发生了弯曲。在不接电阻$R_2$时，测得低频下的波形图如图(bxt4)：
+接了电阻$R_2$时，积分电路在低频下的波形图如图(\ref{20Hz_int_s})，可以看到输出信号的三角波明显发生了弯曲。在不接电阻$R_2$时，测得低频下的波形图如图(\ref{bxt4})：
 \begin{figure}[!h]
 \centering
 \includegraphics[width=8cm]{fig/scope_4.png}\\
@@ -305,27 +306,12 @@ $v_{opp}$/mV & 65   & 53   & 41   & 35.5 & 30   & 17.25 & 15.25 & 11.8  &       
 
 可以看到输出三角波的形状十分良好。
 \end{enumerate}
+\fi
 
 \section{思考题}
-\begin{enumerate}
-\item \textbf{在图(\ref{intcd})中，若出现了较大的直流漂移，在电容两端并联一个100k$\Omega$的电阻可基本抑制直流漂移，试述其原因。}\\
-通过查阅资料$^{\cite{zhidao}}$得知，如果没有这个电阻，电路是交流反馈，交流反馈可以改变电路参数，但由于电容的隔直，无法抑制缓慢变化的直流漂移。通过并联一个电阻，在电路中引入了直流反馈，从而能抑制直流信号变化，抑制零点漂移。
-\item \textbf{图(\ref{int-diff-cd})中，若改选$R_1$=10$\Omega$，$C_1$=100$\mu$F，$R_1$与$C_1$乘积不变，这样是否可以？为什么？}\\
-不可以。根据实验书中式(1-6-3)：
-\begin{equation}
-H_{I1} = \cfrac{V_o(s)}{V_i(o)} = -\cfrac{R_2}{R_1}\cfrac{1}{R_2C_s+1}\label{1-6-3}
-\end{equation}
-可知，若将$R_1$由10k$\Omega$改为10$\Omega$，该电路对输入直流失调电压放大了10000倍，这将对电路产生较大影响。
-\item \textbf{若加了155$\Omega$电阻的图(\ref{int-diff-cd})中的运放为理想运放，试用EWB仿真有无$R_2$时的幅频特性曲线。试述产生差别的原因。}\\
-进行EWB仿真的结果如图(\ref{EWB})所示：
-\begin{figure}[!h]
-\centering
-\includegraphics[width=9cm]{fig/question4.pdf}\\
-\caption{EWB仿真幅频特性曲线}\label{EWB}
-\end{figure}
-
-从图中可以看出，没有$R_2$时，其幅频特性曲线在低频时几乎没有变化，即可以认为是直流放大。
-\end{enumerate}
+\subsection{在图(\ref{intcd})中，若出现了较大的直流漂移，在电容两端并联一个100k$\Omega$的电阻可基本抑制直流漂移，试述其原因。}
+\subsection{图(\ref{int-diff-cd})中，若改选$R_1$=10$\Omega$，$C_1$=100$\mu$F，$R_1$与$C_1$乘积不变，这样是否可以？为什么？}
+\subsection{若加了155$\Omega$电阻的图(\ref{int-diff-cd})中的运放为理想运放，试用EWB仿真有无$R_2$时的幅频特性曲线。试述产生差别的原因。}
 
 \nocite{jiaocai}
 %--------bib------------------
