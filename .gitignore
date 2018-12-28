@@ -10,3 +10,4 @@ Lab**/TeX/*
 data/
 
 .vscode/
+*.py

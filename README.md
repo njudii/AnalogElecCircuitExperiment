@@ -4,6 +4,8 @@
 
 [能生成LaTeX表格的网站](https://www.tablesgenerator.com/)
 
+**注意：不可以原封不动直接用，需要自己检查、修改内容。**
+
 文字来源：实验网站、教材。
 
 特别鸣谢circuitikz电路图的作者：WilliamXu。
