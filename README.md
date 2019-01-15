@@ -10,9 +10,9 @@
 
 文字来源：实验网站、教材。
 
-特别鸣谢circuitikz电路图的作者：WilliamXu。
+特别鸣谢circuitikz电路图的作者：[WilliamXu](https://github.com/WilliamXu980906)。
 
-tex文件：Young。
+tex文件：[Young](https://github.com/github-young)。
 
 附一个实用工具：[能生成LaTeX表格的网站](https://www.tablesgenerator.com/)
 
